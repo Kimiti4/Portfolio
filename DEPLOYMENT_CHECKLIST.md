@@ -6,7 +6,7 @@
 - [x] Default branch: `main`
 - [x] GitHub Pages is enabled
 - [x] Canonical Pages path: `https://kimiti4.github.io/Portfolio/`
-- [ ] Confirm the latest `main` commit is the intended release
+- [x] Latest `main` content includes the live-site link correction commit
 
 ## 2. Content Integrity
 
@@ -19,17 +19,17 @@
 - [x] Historical IYF work remains available as supporting evidence
 - [ ] Review every factual project claim against the underlying repository before major applications
 
-## 3. Link Integrity
+## 3. Link Integrity — source-level verification
 
-- [ ] Home navigation works on every page
-- [ ] About navigation works on every page
-- [ ] Systems navigation works on every page
-- [ ] Contact navigation works on every page
-- [ ] Public GitHub links resolve
-- [ ] Live project links resolve
-- [ ] Local Markdown documentation links resolve on GitHub and Pages as intended
-- [ ] No `href="#"` placeholders remain
-- [ ] No obsolete `iyf-s10-week-02-Kimiti4` portfolio URL remains
+- [x] Home navigation targets `index.html`
+- [x] About navigation targets `about.html`
+- [x] Systems navigation targets `projects.html`
+- [x] Contact navigation targets `contact.html`
+- [x] Public GitHub links are explicit HTTPS destinations
+- [x] Tiannara architecture brief now links to its GitHub-rendered source instead of a GitHub Pages `.md` route
+- [x] No `href="#"` placeholders remain
+- [x] No obsolete `iyf-s10-week-02-Kimiti4` portfolio URL remains
+- [ ] Confirm every external destination with a live browser/request check
 
 ## 4. Responsive Verification
 
@@ -52,18 +52,19 @@ Verify:
 - [ ] Footer does not overflow
 - [ ] Images preserve aspect ratio
 
-## 5. Accessibility
+## 5. Accessibility — source-level verification
 
-- [ ] One meaningful `h1` per page
-- [ ] Heading hierarchy is logical
-- [ ] Navigation has an accessible label
-- [ ] Current page uses `aria-current`
-- [ ] Images have meaningful alt text
-- [ ] Interactive elements are keyboard reachable
-- [ ] Focus states are visible
-- [ ] Text/background contrast is acceptable
-- [ ] Reduced-motion preference is respected
-- [ ] No information depends exclusively on color
+- [x] Pages use semantic landmarks and labelled navigation
+- [x] Current page uses `aria-current` in the primary navigation
+- [x] Hero image has meaningful alt text
+- [x] Form/document structure is explicitly labelled where applicable
+- [ ] Confirm one meaningful `h1` per page with automated/static audit
+- [ ] Confirm heading hierarchy with automated/static audit
+- [ ] Confirm keyboard navigation in a real browser
+- [ ] Confirm visible focus states in a real browser
+- [ ] Confirm text/background contrast with an accessibility tool
+- [ ] Confirm reduced-motion behavior in a real browser
+- [ ] Confirm no information depends exclusively on color
 
 ## 6. Performance
 
@@ -113,6 +114,10 @@ Do not commit secrets, credentials, local machine paths or generated build artif
 - Replace temporary links immediately when canonical URLs change.
 - Preserve historical coursework as evidence, but keep it subordinate to current engineering work.
 - Re-run accessibility, link and performance checks after significant redesigns.
+
+## Current verification boundary
+
+The repository/source verification is complete for the checks marked `[x]`. Full live-browser, responsive, accessibility-tool and Lighthouse certification remains intentionally unchecked until those tools are actually run against the deployed Pages site. This prevents the portfolio from claiming verification that has not been performed.
 
 ## Release standard
 
